@@ -8,7 +8,24 @@ body {
 	font-family: Arial, sans-serif;
 	background-color: #fac9c9; /* rosa claro */
   padding-top: 135px;
+  filter: blur(5px);
+  transition: filter 0.3s ease;
 }
+
+
+@keyframes fadeOutBlur {
+  from {
+    filter: blur(5px);
+  }
+  to {
+    filter: blur(0);
+  }
+}
+
+.blur-animation {
+  animation: fadeOutBlur 1s ease forwards;
+}
+
 
 header {
   background-color: #ffb4b4; /* vermelho escuro */
